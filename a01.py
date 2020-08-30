@@ -1,10 +1,10 @@
-#Program Name: Sales Tax Calculator
-#Filename:a01.py
-#Author: Ryan Fong
-#Date: 8/27/2020
-#Assignment: CISP 300 - Assignment 01 Programming Exercise #06
-#Description: A quick program to calculate sales tax based on given rates and user input
-#Sources: See \/
+#Program Name:  Sales Tax Calculator
+#Filename       a01.py
+#Author:        Ryan Fong
+#Date:          8/27/2020
+#Assignment:    CISP 300 - Assignment 01 Programming Exercise #06
+#Description:   A quick program to calculate sales tax based on given rates and user input
+#Sources:       See \/
 #https://stackoverflow.com/questions/52796600/typeerror-can-only-concatenate-str-not-float-to-str
 #https://appdividend.com/2020/05/13/how-to-convert-python-string-to-float/
 #https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python
