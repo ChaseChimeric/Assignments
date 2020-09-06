@@ -14,28 +14,45 @@
 STATE_TAX = 0.04
 COUNTY_TAX = 0.02
 
-#declaring need for input then gathering input
+#Module Name: get_amount
+#Parameters:  None
+#Desription:  Declaring need for input then gathering input
 def get_amount():
   print("Enter the purchase amount for sales tax calculation")
   return  float(input())
 
-#calculating state tax and returning value
+
+#Module Name: calculate_state_sales_tax
+#Parameters:  1 float, sale_amount
+#Desription:  calculating state tax and returning value
 def calculate_state_sales_tax(sale_amount):
   return sale_amount * STATE_TAX
 
-#calculating county tax and returning value
+
+#Module Name: calculate_county_sales_tax
+#Parameters:  1 float, sale_amount
+#Desription:  calculating county tax and returning value
 def calculate_county_sales_tax(sale_amount):
   return sale_amount * COUNTY_TAX
 
-#calculating total tax amount and returning it
+
+#Module Name: calculate_total_sales_tax
+#Parameters:  2 floats, state_sales_tax_amount and county_sales_tax_amount
+#Desription:  calculating total tax amount and returning it
 def calculate_total_sales_tax(state_sales_tax_amount, county_sales_tax_amount):
   return state_sales_tax_amount + county_sales_tax_amount
 
-#calculates total sale by adding user data with total tax amount
+
+#Module Name: calculate_total_sale
+#Parameters:  2 floats, sale_amount and sales_tax_amount
+#Desription:  calculates total sale by adding user data with total tax amount
 def calculate_total_sale(sale_amount, sales_tax_amount):
   return sale_amount + sales_tax_amount
 
-#prints and formats data while calling required modules
+
+#Module Name: main
+#Parameters:  None
+#Desription:  prints and formats data while calling required modules
 def main():
   user_input = get_amount()
   print("State sales tax is: {:.2f}".format(calculate_state_sales_tax(user_input)))
