@@ -54,10 +54,16 @@ def calculate_total_sale(sale_amount, sales_tax_amount):
 #Parameters:  None
 #Desription:  prints and formats data while calling required modules
 def main():
+
   user_input = get_amount()
-  print("State sales tax is: {:.2f}".format(calculate_state_sales_tax(user_input)))
-  print("County sales tax is: {:.2f}".format(calculate_county_sales_tax(user_input)))
-  print("Total sales tax is: {:.2f}".format(calculate_total_sales_tax(calculate_state_sales_tax(user_input), calculate_county_sales_tax(user_input))))
-  print("\nTotal purchase amount is: {:.2f}".format(calculate_total_sale(user_input, calculate_total_sales_tax(calculate_state_sales_tax(user_input), calculate_county_sales_tax(user_input)))))
+  state_sales_tax = calculate_state_sales_tax(user_input)
+  county_sales_tax = calculate_county_sales_tax(user_input)
+  total_sales_tax = calculate_total_sales_tax(state_sales_tax, county_sales_tax)
+  total_purchase = calculate_total_sale(user_input, total_sales_tax)
+
+  print("State sales tax is: {:.2f}".format(state_sales_tax))
+  print("County sales tax is: {:.2f}".format(county_sales_tax))
+  print("Total sales tax is: {:.2f}".format(total_sales_tax))
+  print("\nTotal purchase amount is: {:.2f}".format(total_purchase))
 
 main()

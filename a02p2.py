@@ -60,12 +60,17 @@ def main():
     print("Enter the price of paint (per gallon) to be used: ")
     paint_price = float(input())
 
+    paint_gallons_required = calculate_paint_gallons_required(square_feet)
+    labor_hours_required = calculate_labor_hours_required(square_feet)
+    cost_of_paint = calculate_cost_of_paint(paint_gallons_required, paint_price)
+    cost_of_labor = calculate_cost_of_labor(labor_hours_required, LABOR_COST)
+    total_job_cost = calculate_total_job_cost(cost_of_paint, cost_of_labor)
 
-    print("Gallons of paint required:   ", calculate_paint_gallons_required(square_feet))
-    print("Labor hours required:        ", calculate_labor_hours_required(square_feet))
-    print("Cost of paint:               ", calculate_cost_of_paint(calculate_paint_gallons_required(square_feet), paint_price))
-    print("Cost of labor:               ", calculate_cost_of_labor(calculate_labor_hours_required(square_feet), LABOR_COST))
-    print("Total job cost is:           ", calculate_total_job_cost(calculate_cost_of_paint(calculate_paint_gallons_required(square_feet), paint_price), calculate_cost_of_labor(calculate_labor_hours_required(square_feet), LABOR_COST)))
+    print("Gallons of paint required:   | {:.2f} Gallons".format(paint_gallons_required))
+    print("Labor hours required:        | {:.2f} Hours".format(labor_hours_required))
+    print("Cost of paint:               | {:.2f}".format(cost_of_paint))
+    print("Cost of labor:               | {:.2f}".format(cost_of_labor))
+    print("Total job cost is:           | {:.2f}".format(total_job_cost))
 
 #Run Program
 main()
