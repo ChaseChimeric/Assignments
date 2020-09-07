@@ -68,9 +68,9 @@ def main():
 
     print("Gallons of paint required:   | {:.2f} Gallons".format(paint_gallons_required))
     print("Labor hours required:        | {:.2f} Hours".format(labor_hours_required))
-    print("Cost of paint:               | {:.2f}".format(cost_of_paint))
-    print("Cost of labor:               | {:.2f}".format(cost_of_labor))
-    print("Total job cost is:           | {:.2f}".format(total_job_cost))
+    print("Cost of paint:               | ${:.2f}".format(cost_of_paint))
+    print("Cost of labor:               | ${:.2f}".format(cost_of_labor))
+    print("Total job cost is:           | ${:.2f}".format(total_job_cost))
 
 #Run Program
 main()
