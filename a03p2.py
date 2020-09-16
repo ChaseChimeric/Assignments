@@ -3,10 +3,10 @@
 #Author:        Ryan Fong
 #Date:          9/14/2020
 #Assignment:    Assignment 03 Part 2
-#Description:   A game that takes user integer input converts number of coins to actual values, 
+#Description:   A game that takes user integer input converts number of coins to actual values,
 #               adds them up and judges whether or not they equal one dollar.
 #Sources:       N/A
-
+#gittest
 
 
 #Module Name:   get_user_input()
@@ -40,7 +40,7 @@ def main():
     print("How to Play: enter the number of coins required to make exactly one dollar.")
     user_input = get_user_input()
     coin_total = coin_calculation(user_input[0], user_input[1], user_input[2], user_input[3])
-    
+
     if coin_total == 1.0:
         print("Congratulations - your total is $1.00.  You Win!")
     elif coin_total > 1.0:
