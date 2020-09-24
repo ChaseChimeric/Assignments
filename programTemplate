@@ -1,17 +1,33 @@
-#Program Name:
-#Filename       *.py
-#Author:        Ryan Fong
-#Date:
-#Assignment:
-#Description:
-#Sources:
+"""
+Program Name:
+Filename       *.py
+Author:        Ryan Fong
+Date:
+Assignment:
+Description:
+Sources:
+"""
 
-#Module Name:   main()
-#Parameters:    None
-#Description:   Main module for code
+
+def basic_function():
+    """
+    Module Name:
+    Parameters:
+    Description:
+    """
+
+    return 0
 
 
 def main():
-    return 0
+    """
+    Module Name:   main()
+    Parameters:    None
+    Description:   Main module for code
+    """
 
-main()
+    print("hey")
+
+
+if __name__ == "__main__":
+    main()
