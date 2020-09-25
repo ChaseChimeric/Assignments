@@ -21,11 +21,6 @@ fruits_list = ["Cherries", "Oranges", "Plums", "Melons", "Bars"]
 #Declaring list to store all slot results
 slots_results = []
 
-
-
-
-
-
 def compare_results(slot_one, slot_two, slot_three):
     """
     Module Name:   compare_results()
@@ -44,7 +39,6 @@ def compare_results(slot_one, slot_two, slot_three):
         return WIN
     else: # Else Lose
         return LOSE
-
 
 def slots_run(bet):
     """
@@ -76,8 +70,6 @@ def slots_run(bet):
     print("Amount won this round: ", currency(bet))
     return bet
 
-
-
 def main():
     """
     Module Name:   main()
@@ -103,7 +95,6 @@ def main():
             print("Total bet: ", total_bet)
             print("Total won: ", total_won)
             break
-
 
 
 if __name__ == "__main__":
