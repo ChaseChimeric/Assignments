@@ -48,4 +48,5 @@ def main():
     elif coin_total < 1.0:
         print("Your total was less than $1.00 ($ {:.2f} )".format(coin_total))
 
-main()
+if __name__ == "__main__":
+    main()

@@ -21,4 +21,5 @@ def main():
   print("Time's up!")
 
 # Invoke the main module
-main()
+if __name__ == "__main__":
+    main()
