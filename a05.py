@@ -1,11 +1,11 @@
 """
-Program Name:
-Filename       *.py
+Program Name:  Slot Machine Game
+Filename       main.py
 Author:        Ryan Fong
-Date:
-Assignment:
-Description:
-Sources:
+Date:          27 September 2020
+Assignment:    Assignment 5
+Description:   A simple slot machine game
+Sources:       N/A
 """
 from random import *
 from locale import *
