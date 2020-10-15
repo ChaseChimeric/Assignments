@@ -9,7 +9,8 @@ Sources:       N/A
 """
 from random import *
 from locale import *
-setlocale(LC_ALL, '')
+
+setlocale(LC_ALL, '') #Localization
 
 #Constants
 WIN = 1
@@ -55,13 +56,13 @@ def slots_run(bet):
     win_state = compare_results(slots_results[0], slots_results[1], slots_results[2])
 
 
-    if win_state == 0: #Calculates amount of money won based on the win_state
+    if win_state == LOSE: #Calculates amount of money won based on the win_state
         print("Number of matches:  0")
         bet *= 0
-    elif win_state == 1:
+    elif win_state == WIN:
         print("Number of matches:  2")
         bet *= 2
-    elif win_state == 2:
+    elif win_state == JACKPOT:
         print("Number of matches:  3")
         bet *= 3
     else:
