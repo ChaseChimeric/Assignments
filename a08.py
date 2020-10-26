@@ -1,12 +1,12 @@
 """
-Program Name:   Rainfall Logging Program
+Program Name:   Rainfall Logging Program W/ Array Ordering
 Filename        main.py
 Author:         Ryan Fong
-Date:           18-10-2020
-Assignment:     Assignment 7
+Date:           25-10-2020
+Assignment:     Assignment 8
 Description:    A program that collects user data for rainfall in the months of
                 a year and calculates various data off of it
-                (e.g. Average rainfall, total rainfall)
+                (e.g. Average rainfall, total rainfall) *also prints ascending list
 Sources:        None
 """
 MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
