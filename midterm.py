@@ -12,6 +12,7 @@ from random import *
 MIN_OPERANDS = 0
 MAX_OPERANDS = 999
 
+
 def main():
     # Accumulators
     total_questions = 0
@@ -46,23 +47,26 @@ def main():
 
     display_final_results(total_questions, total_correctly_answered)
 
+
 def get_random_number():
-  """
-  Module Name:  get_random_number
-  Parameters:   None
-  Description:  Returns a random integer in the range specified by the global constants
-  """
-  return randint(MIN_OPERANDS,MAX_OPERANDS)
+    """
+    Module Name:  get_random_number
+    Parameters:   None
+    Description:  Returns a random integer in the range specified by the global constants
+    """
+    return randint(MIN_OPERANDS,MAX_OPERANDS)
+
 
 def display_addition_operation(number_one, number_two):
-  """
-  Module Name:  display_addition_operation
-  Parameters:   Two parameters, both integers
-  Description:  Displays the math problem in a friendly way
-  """
-  print(f"  {number_one:>3d}")
-  print(f"+ {number_two:>3d}")
-  print("-"*5)
+    """
+    Module Name:  display_addition_operation
+    Parameters:   Two parameters, both integers
+    Description:  Displays the math problem in a friendly way
+    """
+    print(f"  {number_one:>3d}")
+    print(f"+ {number_two:>3d}")
+    print("-"*5)
+
 
 def player_wishes_to_play():
     """
@@ -73,7 +77,7 @@ def player_wishes_to_play():
     """
     print("Do you wish to go again? (y/n)")
     user_input = input().lower()
-    while user_input != "y" and user_input != "n": #Input Validation
+    while user_input != "y" and user_input != "n":  #Input Validation
         print("Incorrect input, please enter y or n:")
         user_input = input().lower()
     if user_input == "y":
@@ -84,17 +88,19 @@ def player_wishes_to_play():
         print("ERROR from player_wishes_to_play()")
     return keep_playing
 
+
 def get_user_answer_validated():
-  """
-  Module Name:    get_user_answer_validated
-  Parameters:     None
-  Description:    Validates for correct input, integer returns value
-  """
-  user_input = int(input())
-  while user_input < 0: #Input Validation
-      print("Incorrect input, please enter a value above zero:")
-      user_input = int(input())
-  return user_input
+    """
+    Module Name:    get_user_answer_validated
+    Parameters:     None
+    Description:    Validates for correct input, integer returns value
+    """
+    user_input = int(input())
+    while user_input < 0:  #Input Validation
+        print("Incorrect input, please enter a value above zero:")
+        user_input = int(input())
+    return user_input
+
 
 def get_comparison_result(correct_result, attempt):
     """
@@ -107,13 +113,14 @@ def get_comparison_result(correct_result, attempt):
     else:
         return False
 
+
 def display_final_results(number_of_questions, number_correctly_answered):
     """
     Module Name:    display_final_results
     Parameters:     2 integers, number_of_questions, number_correctly_answered
     Description:    Finds percentage correct, Displays total attempted, number correct, and percentage
     """
-    percentage_correct = round(number_correctly_answered/number_of_questions, 2) * 100 #Finding percentage correct
+    percentage_correct = round(number_correctly_answered/number_of_questions, 2) * 100  #Finding percentage correct
     print("Total number of math problems attempted: ", number_of_questions)
     print("Number of correct answers:               ", number_correctly_answered)
     print("Percentage correct:                      ", percentage_correct, "%")
