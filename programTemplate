@@ -1,6 +1,6 @@
 """
 Program Name:
-Filename       *.py
+Filename       main.py
 Author:        Ryan Fong
 Date:
 Assignment:
@@ -9,7 +9,7 @@ Sources:
 """
 
 
-def basic_function():
+def basic():
     """
     Module Name:
     Parameters:
@@ -25,8 +25,7 @@ def main():
     Parameters:    None
     Description:   Main module for code
     """
-
-    print("hey")
+    basic()
 
 
 if __name__ == "__main__":
