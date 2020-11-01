@@ -46,7 +46,7 @@ def main():
     Parameters:    None
     Description:   Main module for code
     """
-    get_records_from_user_and_write_to_file('/home/chasechimeric/golf.dat')
+    get_records_from_user_and_write_to_file('golf.dat')
 
 
 if __name__ == "__main__":
