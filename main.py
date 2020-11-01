@@ -15,10 +15,11 @@ def read_records_from_file_and_display(filename):
     Parameters:
     Description:
     """
-    with open(filename, 'r') as InputFile:
-        for line in enumerate(InputFile.readlines(), 0):
-            print(line)
-            LineData = InputFile.readline().rstrip('\n').split('#')
+    with open(filename, 'r') as InFile:
+        LineCount = len(InFile.read().split('\n')) - 1
+        InFile.seek(0,0)  #Resets read position of file
+        for line in range(0, LineCount):
+            LineData = InFile.readline().rstrip('\n').split('#')
             print(LineData[0], 'had a score of: ', LineData[1])
     return 0
 
