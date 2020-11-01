@@ -5,15 +5,17 @@ Author:         Ryan Fong
 Date:           31 October 2020
 Assignment:     Assignment 9 Part 1
 Description:    A program to store the golf scores and player names in a file.
-Sources:        None
+Sources:        \/
+                https://dbader.org/blog/python-file-io
+                https://pscustomobject.github.io/python/Python-Reset-Read-Write-Position/
 """
 
 
 def read_records_from_file_and_display(filename):
     """
-    Module Name:
-    Parameters:
-    Description:
+    Module Name:    read_records_from_file_and_display()
+    Parameters:     1 String 'filename'
+    Description:    Reads player names and scores from golf.dat and prints them
     """
     with open(filename, 'r') as InFile:
         LineCount = len(InFile.read().split('\n')) - 1  #Gets amount of lines with data in them
@@ -30,7 +32,7 @@ def main():
     Parameters:    None
     Description:   Main module for code
     """
-    read_records_from_file_and_display('golfData.dat')
+    read_records_from_file_and_display('golf.dat')
 
 
 if __name__ == "__main__":

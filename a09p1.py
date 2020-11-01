@@ -30,6 +30,7 @@ def get_records_from_user_and_write_to_file(filename):
             while correct_input == False:
                 if user_input != 'n' and user_input != 'y':
                     print("Please enter Yes('y') or No('n')")
+                    user_input = input().lower()
                 elif user_input == 'n':
                     go_again = False
                     correct_input = True
@@ -45,7 +46,7 @@ def main():
     Parameters:    None
     Description:   Main module for code
     """
-    get_records_from_user_and_write_to_file('golfData.dat')
+    get_records_from_user_and_write_to_file('golf.dat')
 
 
 if __name__ == "__main__":
