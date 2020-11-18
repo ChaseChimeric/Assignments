@@ -1,11 +1,12 @@
-#Program Name:  Paint Job Calculator
-#Filename       main.py
-#Author:        Ryan Fong
-#Date:          09/04/2020
-#Assignment:    Assignment 02 | part 2
-#Description:   A tool that gathers user data of square footage and paint price and calculates total job price based on input.
-#Sources:
-
+"""
+Program Name:  Paint Job Calculator
+Filename       main.py
+Author:        Ryan Fong
+Date:          09/04/2020
+Assignment:    Assignment 02 | part 2
+Description:   A tool that gathers user data of square footage and paint price and calculates total job price based on input.
+Sources:
+"""
 
 #Declaring constants: fixed labor cost, gallons of paint per ^2 foot, and the hours of labor per ^2 foot
 LABOR_COST = 20.00
@@ -13,7 +14,6 @@ LABOR_COST = 20.00
 GALLONS_PER_FOOT = 0.00869565217391304347826086956522
 #Labor per foot is 8/115
 LABOR_PER_FOOT = 0.06956521739130434782608695652174
-
 
 
 def calculate_paint_gallons_required(total_wall_space):
@@ -83,6 +83,7 @@ def main():
     print("Cost of paint:               | ${:.2f}".format(cost_of_paint))
     print("Cost of labor:               | ${:.2f}".format(cost_of_labor))
     print("Total job cost is:           | ${:.2f}".format(total_job_cost))
+
 
 #Run Program
 if __name__ == "__main__":

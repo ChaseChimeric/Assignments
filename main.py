@@ -15,7 +15,7 @@ def basic():
     Parameters:
     Description:
     """
-
+    
     return 0
 
 

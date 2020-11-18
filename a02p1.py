@@ -1,18 +1,22 @@
-#Program Name:  Sales Tax Calculator *REFORMATTED*
-#Filename       main.py
-#Author:        Ryan Fong
-#Date:          09/04/2020
-#Assignment:    CISP 300 - Assignment 02 Part 1
-#Description:   Reformatted program to use modules
-#Sources:       See \/
-#https://stackoverflow.com/questions/52796600/typeerror-can-only-concatenate-str-not-float-to-str
-#https://appdividend.com/2020/05/13/how-to-convert-python-string-to-float/
-#https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python
-#https://docs.python.org/3/library/stdtypes.html?highlight=format#str.format
+"""
+Program Name:  Sales Tax Calculator *REFORMATTED*
+Filename       main.py
+Author:        Ryan Fong
+Date:          09/04/2020
+Assignment:    CISP 300 - Assignment 02 Part 1
+Description:   Reformatted program to use modules
+Sources:       See \/
+https://stackoverflow.com/questions/52796600/typeerror-can-only-concatenate-str-not-float-to-str
+https://appdividend.com/2020/05/13/how-to-convert-python-string-to-float/
+https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python
+https://docs.python.org/3/library/stdtypes.html?highlight=format#str.format
+"""
+
 
 #declaring tax rates at top so they aren't locked later in code
 STATE_TAX = 0.04
 COUNTY_TAX = 0.02
+
 
 def get_amount():
     """
@@ -21,7 +25,8 @@ def get_amount():
     Desription:  Declaring need for input then gathering input
     """
     print("Enter the purchase amount for sales tax calculation")
-    return  float(input())
+    return float(input())
+
 
 def calculate_state_sales_tax(sale_amount):
     """
@@ -31,6 +36,7 @@ def calculate_state_sales_tax(sale_amount):
     """
     return sale_amount * STATE_TAX
 
+
 def calculate_county_sales_tax(sale_amount):
     """
     Module Name: calculate_county_sales_tax
@@ -38,6 +44,7 @@ def calculate_county_sales_tax(sale_amount):
     Desription:  calculating county tax and returning value
     """
     return sale_amount * COUNTY_TAX
+
 
 def calculate_total_sales_tax(state_sales_tax_amount, county_sales_tax_amount):
     """
@@ -47,6 +54,7 @@ def calculate_total_sales_tax(state_sales_tax_amount, county_sales_tax_amount):
     """
     return state_sales_tax_amount + county_sales_tax_amount
 
+
 def calculate_total_sale(sale_amount, sales_tax_amount):
     """
     Module Name: calculate_total_sale
@@ -54,6 +62,7 @@ def calculate_total_sale(sale_amount, sales_tax_amount):
     Desription:  calculates total sale by adding user data with total tax amount
     """
     return sale_amount + sales_tax_amount
+
 
 def main():
     """
